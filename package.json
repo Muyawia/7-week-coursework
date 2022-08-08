@@ -1,0 +1,22 @@
+{
+  "name": "7-week-coursework",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Muyawia/9-week-coursework.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Muyawia/9-week-coursework/issues"
+  },
+  "homepage": "https://github.com/Muyawia/9-week-coursework#readme",
+  "dependencies": {
+    "inquirer": "^9.1.0"
+  }
+}

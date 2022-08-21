@@ -2,7 +2,7 @@
 const fs = require('fs');
 const path = require('path');
 const inquirer = import('inquirer');
-const createReadme = require('./utils/createReadme')
+const createReadme = require('./utils/createReadme.js');
 
 const questions = [
     {
@@ -27,21 +27,26 @@ const questions = [
     },
 ];
 
-function write(fileName, data) {
-    return fs.writeFileSync(path.join(process.cwd(), fileName), data);
-}
-
-function init() {
-    inquirer.prompt(questions).then((inquirerReplies) => {
-        console.log('...Creating ReadMe...');
-        write('ReadMe.md', createReadme({...inquirerReplies}));
+function write(filename, data) {
+    fs.writeFile(filename, data, function (err) {
+      if (err) {
+        return console.log(err);
+      }
+      console.log("File has been written to " + filename);
     });
-}
+  }
+
+  async function init() {
+    const filename = "README.md";
+    const responses = await inquirer.prompt([questions]);
+    console.log("Form complete :)");
+  
+    const markDown = generateMarkDown(responses);
+  
+    createReadme(filename, markDown);
+  }
 
 init();
-
-//inquirer.prompt(console.log('...Creating ReadMe...'));
-
 /* 
     {
         type: "",

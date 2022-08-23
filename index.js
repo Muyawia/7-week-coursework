@@ -47,10 +47,3 @@ function write(filename, data) {
   }
 
 init();
-/* 
-    {
-        type: "",
-        name: "",
-        message: "",
-    },
-*/

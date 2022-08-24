@@ -1,13 +1,14 @@
-function createReadme(data) {
-    return `# Test readme for ${data.title}
+function createReadme(responses) {
+ 
+  return `# Test readme for ${responses.title}
     
-    ## Description
-    
-    ${data.description}
-    
-    ## Details
-    * GitHub username: ${data.username}
-    * Email: ${data.email}`;
-}
-
-module.exports = createReadme;
+  ## Description
+  
+  ${responses.description}
+  
+  ## Details
+  * GitHub username: ${responses.username}
+  * Email: ${responses.email}`;
+};
+  
+  module.exports = createReadme;

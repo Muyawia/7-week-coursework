@@ -17,6 +17,6 @@
   },
   "homepage": "https://github.com/Muyawia/9-week-coursework#readme",
   "dependencies": {
-    "inquirer": "^9.1.0"
+    "inquirer": "^8.2.4"
   }
 }

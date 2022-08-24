@@ -4,7 +4,7 @@
 A node application that generates a README file using simple user input.
 
 ## Usage
-This application is not deployed live on any website.
+This application is deployed on github pages.
 To use it invoke the following command in the terminal:
 ```bash
 nmp i
@@ -14,6 +14,8 @@ Followed by:
 node index.js
 ```
 And follow the prompts in the terminal.
+You may also watch this video to understand how it works and is used:
+https://youtu.be/-USrb4s6PT8
 
 ## TODO:
 * Finish questions
